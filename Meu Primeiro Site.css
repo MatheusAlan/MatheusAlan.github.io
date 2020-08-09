@@ -1,0 +1,153 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: black;
+    color: white;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo {
+    width: 55px;
+    position: absolute;
+    top: 10px;
+    margin-left: 5%;
+}
+#menu {
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+    margin-top: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+li {
+    float: left;
+    padding: 20 10 20 10;
+}
+li:hover {
+    background-color: forestgreen;
+}
+#imagem_fundo {
+    background: url("LUX.jpg");
+    height: 100%;
+    text-align: center;
+    background-size: cover;
+}
+#titulo {
+    color: white;
+    padding-top: 20%;
+    font-size: 70px;
+    line-height: 1;
+    
+}
+#subtitulo {
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-top: 3px solid white;
+    text-shadow: 1px 1px  black;
+}
+#acao {
+    color: white;
+    border: 1px white solid;
+    padding: 10px 20px 10px 20px ;
+}
+.icone {
+    width: 51px;
+}
+.rede{
+    width: 20px;
+}
+section {
+    padding: 20px;
+    float: left;
+}
+.destaque {
+    background-color: #f7f7f7;
+}
+.imgeco {
+    width: 90%;
+    height: 30%;
+}
+.coluna {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    padding-top: 50px;
+}
+.dois {
+    width: 40%;
+}
+.quatro {
+    width: 15%;
+}
+.cinco{
+    width: 10%;
+}
+.tres {
+    width: 29%;
+    padding: 0 2%;
+}
+.justificado {
+    text-align: justify;
+}
+.centralizado {
+    text-align: center;
+}
+img:hover{
+    transform: scale(1.022);
+}
+Img{
+    transition: 500ms
+}
+footer{
+    background-color: black;
+    float: left;
+    width: 100%;
+    color: white;
+    height: 50%;
+}
+.top{
+    padding-top: 50px;
+}
+.stark{
+    color: black;
+}
+.frase{
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: xx-large;
+}
+.autor{
+    text-align: right;
+    font-size: small;
+}
+@media all and (max-width: 1399px) {
+    #menu {
+        visibility: hidden;
+    } 
+    .coluna, .dois, .tres, .quatro {
+         display: block;   
+         width: 80%;
+         padding: 0;
+         margin: 10px auto;
+         float: none;
+    }
+    #logodiv {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        padding: 0px;
+    }
+    #logo {
+        margin-left: 0px;
+        transform: translateX(-50%);
+    }
+}
